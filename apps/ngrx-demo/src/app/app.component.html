@@ -1,5 +1,9 @@
 <div style="text-align: center;">
 	<h1>Welcome to ngrx-demo!</h1>
-	<img width="450" src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" />
 </div>
-<div>Message: {{ hello$ | async | json }}</div>
+
+<button routerLink="/">Home</button>
+<button routerLink="/counter">Go to counter demo</button>
+<button routerLink="/comms">Go to comms demo</button>
+
+<router-outlet></router-outlet>
