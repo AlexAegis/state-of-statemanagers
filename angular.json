@@ -18,7 +18,7 @@
 						"tsConfig": "apps/ngrx-demo/tsconfig.app.json",
 						"aot": true,
 						"assets": ["apps/ngrx-demo/src/favicon.ico", "apps/ngrx-demo/src/assets"],
-						"styles": ["apps/ngrx-demo/src/styles.css"],
+						"styles": ["apps/ngrx-demo/src/styles.scss"],
 						"scripts": []
 					},
 					"configurations": {
@@ -208,6 +208,9 @@
 		},
 		"@nrwl/angular:library": {
 			"unitTestRunner": "jest"
+		},
+		"@schematics/angular:component": {
+			"styleext": "scss"
 		}
 	},
 	"defaultProject": "ngrx-demo"

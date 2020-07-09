@@ -11,7 +11,7 @@ import { metaReducers } from './reducers';
 		StoreModule.forRoot(
 			{ router: routerReducer },
 			{
-				metaReducers: metaReducers,
+				metaReducers,
 				runtimeChecks: {
 					// strictStateImmutability and strictActionImmutability are enabled by default
 					strictStateSerializability: true,
@@ -22,7 +22,7 @@ import { metaReducers } from './reducers';
 		),
 		StoreRouterConnectingModule.forRoot(),
 		StoreDevtoolsModule.instrument({
-			name: 'NgRx Book Store App',
+			name: 'NgRX Demo App',
 			logOnly: !environment.production,
 		}),
 		EffectsModule.forRoot([]),

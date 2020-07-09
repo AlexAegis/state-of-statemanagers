@@ -1,1 +1,21 @@
-<p>counter works!</p>
+<p [ngClass]="{ loading: counterStoreFacade.loading$ | async }">
+	Count: {{ counterStoreFacade.count$ | async }}
+</p>
+<p>Loading: {{ counterStoreFacade.loading$ | async }}</p>
+<p [ngClass]="{ loading: counterStoreFacade.loading$ | async }">
+	Total changes so far: {{ counterStoreFacade.changes$ | async }}
+</p>
+
+<button mat-raised-button color="primary" (click)="counterStoreFacade.increment()">
+	Increment
+</button>
+<button mat-raised-button color="primary" (click)="counterStoreFacade.decrement()">
+	Decrement
+</button>
+
+<button mat-raised-button color="primary" (click)="counterStoreFacade.slowIncrement()">
+	Slow Increment
+</button>
+<button mat-raised-button color="primary" (click)="counterStoreFacade.slowDecrement()">
+	Slow Decrement
+</button>

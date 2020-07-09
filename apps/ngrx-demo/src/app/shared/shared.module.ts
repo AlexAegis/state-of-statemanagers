@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
+import { MaterialModule } from '../material';
 
+const common = [MaterialModule];
 @NgModule({
-	exports: [],
+	imports: [...common],
+	exports: [...common],
 })
 export class SharedModule {}
