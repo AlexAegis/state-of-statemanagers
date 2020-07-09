@@ -1,20 +1,10 @@
 {
-  "extends": "../../tslint.json",
-  "rules": {
-    "directive-selector": [
-      true,
-      "attribute",
-      "stateOfStatemanagers",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "state-of-statemanagers",
-      "kebab-case"
-    ]
-  },
-  "linterOptions": {
-    "exclude": ["!**/*"]
-  }
+	"extends": "../../tslint.json",
+	"rules": {
+		"directive-selector": [true, "attribute", "stateOfStatemanagers", "camelCase"],
+		"component-selector": [true, "element", "state-of-statemanagers", "kebab-case"]
+	},
+	"linterOptions": {
+		"exclude": ["!**/*"]
+	}
 }
