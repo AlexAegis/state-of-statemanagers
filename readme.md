@@ -2,7 +2,7 @@
 
 This is a demo of current Angular state managers.
 
-> So far only NgRX is implemented
+> NgXS soon™
 
 ## [NgRX](https://ngrx.io/guide)
 
