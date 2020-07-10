@@ -34,6 +34,13 @@
 		},
 		"api-interfaces": {
 			"tags": []
+		},
+		"akita-demo": {
+			"tags": []
+		},
+		"akita-demo-e2e": {
+			"tags": [],
+			"implicitDependencies": ["akita-demo"]
 		}
 	}
 }
