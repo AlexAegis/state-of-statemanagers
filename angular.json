@@ -55,6 +55,7 @@
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"options": {
+						"port": 4901,
 						"browserTarget": "ngrx-demo:build",
 						"proxyConfig": "apps/ngrx-demo/proxy.conf.json"
 					},
@@ -254,6 +255,7 @@
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"options": {
+						"port": 4902,
 						"browserTarget": "akita-demo:build"
 					},
 					"configurations": {
