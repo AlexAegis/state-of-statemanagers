@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
+import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { RootStoreModule } from './store/root-store.module';
 
 @NgModule({
 	declarations: [AppComponent],
@@ -22,7 +23,7 @@ import { RootStoreModule } from './store/root-store.module';
 				loadChildren: () => import('./comms/comms.module').then((m) => m.CommsModule),
 			},
 		]),
-		RootStoreModule,
+		...(environment.production ? [] : [AkitaNgDevtools.forRoot({})]),
 	],
 	providers: [],
 	bootstrap: [AppComponent],

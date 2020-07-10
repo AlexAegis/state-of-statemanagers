@@ -47,5 +47,6 @@ export const reducer = createReducer(
 export const selectCounterState = createFeatureSelector<State, CounterState>(counterFeatureKey);
 
 export const selectCount = createSelector(selectCounterState, (state) => state.count);
+// Computed property, selectors are memoized by default, no need to make it part of the state
 export const selectLoading = createSelector(selectCounterState, (state) => state.slowProcesses > 0);
 export const selectChanges = createSelector(selectCounterState, (state) => state.changes);
